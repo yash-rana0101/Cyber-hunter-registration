@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Button, Datepicker, Select, TextInput } from "flowbite-react";
+import React from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="w-full h-screen  flex items-center justify-center bg-slate-900">
+      <form className="flex flex-col gap-2 items-center w-96">
+        <h1 className="text-2xl text-white">Registration Form</h1>
+        <TextInput placeholder="Name" className="w-full" />
+        <TextInput placeholder="Q.Id" className="w-full" />
+        <Select id="Course" className="w-full" required>
+          <option>B.Tech</option>
+          <option>BCA</option>
+        </Select>
+        <Select id="sessionYear" className="w-full" required>
+          <option>1st</option>
+          <option>2nd</option>
+          <option>3rd</option>
+          <option>4th</option>
+        </Select>
+        <Select id="section" className="w-full" required>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+          <option>E</option>
+          <option>F</option>
+          <option>G</option>
+          <option>H</option>
+          <option>I</option>
+        </Select>
+        <TextInput placeholder="E-mail" className="w-full" />
+        <TextInput placeholder="Phone Number" className="w-full" />
+        <Datepicker size="xs" className="w-full"/>
+        <Button> Pay Now </Button>
+        <Button>Submit</Button>
+      </form>
+    </div>
+  );
 }
-
-export default App
