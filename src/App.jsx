@@ -1,3 +1,4 @@
+import './App.css'
 import React, { useState } from "react";
 // import Profile from "./assets/profile.png";
 import Upload from "./assets/upload-icon.png";
@@ -21,7 +22,6 @@ function App() {
   return (
     <>
       <Navbar />
-      
       <div className="mt-20 w-full h-full overflow-hidden">
         {/* Background Video */}
         <video
