@@ -12,7 +12,7 @@ function App() {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="fixed top-0 left-0 w-full h-full object-cover"
       >
         <source src={BackgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
@@ -38,6 +38,38 @@ function App() {
         </div>
 
         {/* 1st row */}
+        <div className="w-full flex flex-col md:flex-row justify-evenly items-center">
+          <div className="relative w-10/12 md:w-3/12">
+            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <input
+              type="text"
+              placeholder="ENTER YOUR NAME"
+              required
+              className="w-full m-4 pl-10 md:pl-4 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
+            />
+          </div>
+          <div className="relative w-10/12 md:w-3/12">
+            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <select
+              required
+              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[#7CAC5B] border-b-4 border-0"
+            >
+              <option value="Enter Your">Enter Your Section</option>
+              <option value="Section 1">A</option>
+              <option value="Section 2">B</option>
+              <option value="Section 3">C</option>
+              <option value="Section 4">D</option>
+              <option value="Section 5">E</option>
+              <option value="Section 6">F</option>
+              <option value="Section 7">G</option>
+              <option value="Section 8">H</option>
+              <option value="Section 9">I</option>
+              <option value="Section 10">J</option>
+              <option value="Section 11">K</option>
+              <option value="Section 12">Other</option>
+            </select>
+          </div>
+        </div>
         <div className="w-full flex flex-col md:flex-row justify-evenly items-center">
           <div className="relative w-10/12 md:w-3/12">
             <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
@@ -163,15 +195,7 @@ function App() {
               className="w-full m-4 pl-10 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
             />
           </div>
-          <div className="relative w-10/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
-            <input
-              type="text"
-              placeholder="Additional Input"
-              required
-              className="w-full m-4 pl-10 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
-            />
-          </div>
+
         </div>
       </div>
     </div>
