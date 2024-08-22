@@ -1,4 +1,4 @@
-import './App.css'
+import "./App.css";
 import React, { useState } from "react";
 // import Profile from "./assets/profile.png";
 import Upload from "./assets/upload-icon.png";
@@ -41,7 +41,10 @@ function App() {
             <span className="text-[#5CE1E6]">CYBER HUNTER CLUB</span>
           </h3>
 
-          <form onSubmit={handleSubmit} className="flex flex-col items-center w-full">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col items-center w-full"
+          >
             <div className="flex flex-col md:flex-row justify-evenly items-center w-full">
               {/* <img src={Profile} alt="" className="h-24 w-24 md:h-32 md:w-32" /> */}
               <div className="flex flex-col justify-center mt-4 md:mt-0 md:m-8 items-center md:items-start">
@@ -215,10 +218,52 @@ function App() {
                 />
               </div>
             </div>
+            <div className="w-full m-2 flex items-center justify-center">
+              <input
+                type="checkbox"
+                id="terms"
+                checked={termsAccepted}
+                onChange={() => setTermsAccepted(!termsAccepted)}
+                className="mr-2 p-3"
+              />
+              <label htmlFor="terms" className="w-3/4 md:w-2/4 text-white">
+                <div className="border-2 lg:text-base text-xs rounded-3xl backdrop-blur-lg p-4">
+                  <h3 className="font-bold ">Registration for club :</h3>
+                  <ul className="list-disc pl-4">
+                    <li>Be the part of cyber hunter club</li>
+                    <li>Experince Live latest technology classed and practical projects</li>
+                  </ul>
+                </div>
+                <div className="">
+                  <h3 className="absolute md:left-[70%] left-[65%] md:top-[72%] top-[78%] z-10"><span className="text-[#7CAC5B]">Price :</span> 50</h3>
+                </div>
+              </label>
+            </div>
+            <div className="w-full m-2 flex items-center justify-center">
+              <input
+                type="checkbox"
+                id="terms"
+                checked={termsAccepted}
+                onChange={() => setTermsAccepted(!termsAccepted)}
+                className="mr-2 p-3"
+              />
+              <label htmlFor="terms" className="w-3/4 md:w-2/4 text-white">
+                <div className="border-2 lg:text-base text-xs rounded-3xl backdrop-blur-lg p-4">
+                  <h3 className="font-bold ">For Club ID Card :</h3>
+                  <ul className="list-disc pl-4">
+                    <li>For Your Customize Cyber Hunter ID Card.</li>
+                  </ul>
+                </div>
+                <div className="">
+                  <h3 className="absolute md:left-[70%] left-[65%] md:top-[83%] top-[86%] z-10"><span className="text-[#7CAC5B]">Price :</span> 20</h3>
+                </div>
+              </label>
+            </div>
+            
 
             {/* Terms and Conditions */}
             <div className="w-full flex flex-col md:flex-row justify-center items-center mt-4">
-              <div className="w-10/12 md:w-full justify-center flex items-center">
+              <div className="w-full md:w-full justify-center flex items-center">
                 <input
                   type="checkbox"
                   id="terms"
