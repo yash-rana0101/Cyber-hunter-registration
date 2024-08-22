@@ -223,7 +223,7 @@ function App() {
             </div>
           </div>
           {/* Terms and Conditions */}
-          <div className="w-full flex flex-col md:flex-row justify-evenly items-center mt-4">
+          <div className="w-full flex flex-col md:flex-row justify-center items-center mt-4">
             <div className="w-10/12 md:w-3/12 flex items-center">
               <input
                 type="checkbox"
