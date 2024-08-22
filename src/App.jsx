@@ -1,20 +1,25 @@
-// import { Button, Datepicker, Select, TextInput } from "flowbite-react";
 import React from "react";
-// import BgImg from "./assets/profile-bg.jpg";
 import Profile from "./assets/profile.png";
 import Upload from "./assets/upload-icon.png";
 import { IoIosArrowForward } from "react-icons/io";
+import BackgroundVideo from "./assets/videoback.mp4";
 
 function App() {
-  
-
   return (
-    <div className="w-full h-full bg-slate-900">
-      {/* <div
-      className="min-h-screen w-full bg-cover bg-center py-10 md:py-20"
-      style={{ backgroundImage: `url(${BgImg})` }}
-    > */}
-      <div className="w-full border-red-700 border-2 h-auto flex flex-col justify-center items-center px-4 md:my-0 my-10 md:px-0">
+    <div className=" w-full h-full overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src={BackgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Main Content */}
+      <div className="relative z-10 w-full h-auto flex flex-col justify-center items-center px-4 md:my-0 my-10 md:px-0">
         <h3 className="m-2 text-white font-medium text-center">
           Register Yourself with{" "}
           <span className="text-[#5CE1E6]">CYBER HUNTER CLUB</span>
@@ -162,16 +167,15 @@ function App() {
             <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
             <input
               type="text"
-              placeholder="Write About Yourself"
+              placeholder="Additional Input"
               required
               className="w-full m-4 pl-10 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
             />
           </div>
         </div>
-
       </div>
     </div>
-    // </div>
   );
 }
+
 export default App;
