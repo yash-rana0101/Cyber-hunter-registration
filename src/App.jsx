@@ -244,7 +244,7 @@ function App() {
         
         <form onSubmit={handleSubmit} className="flex flex-col items-center w-full">
           <div className="flex flex-col md:flex-row justify-evenly items-center w-full">
-            <img src={Profile} alt="" className="h-24 w-24 md:h-32 md:w-32" />
+            {/* <img src={Profile} alt="" className="h-24 w-24 md:h-32 md:w-32" /> */}
             <div className="flex flex-col justify-center mt-4 md:mt-0 md:m-8 items-center md:items-start">
               <h2 className="text-lg text-white text-center md:text-left">
                 UPLOAD PHOTO
@@ -397,7 +397,7 @@ function App() {
           </div>
 
           {/* Terms and Conditions */}
-          <div className="w-full flex flex-col md:flex-row justify-evenly items-center mt-4">
+          <div className="w-full flex flex-col md:flex-row justify-center items-center mt-4">
             <div className="w-10/12 md:w-3/12 flex items-center">
               <input
                 type="checkbox"
