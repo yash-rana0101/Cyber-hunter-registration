@@ -6,13 +6,13 @@ import BackgroundVideo from "./assets/videoback.mp4";
 
 function App() {
   return (
-    <div className=" w-full h-full overflow-hidden">
+    <div className=" w-full h-screen bg-black overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full opacity-50 object-cover"
       >
         <source src={BackgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
@@ -40,21 +40,21 @@ function App() {
         {/* 1st row */}
         <div className="w-full flex flex-col md:flex-row justify-evenly items-center">
           <div className="relative w-10/12 md:w-3/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <input
-              type="text"
+              type="email"
               placeholder="example@gmail.com"
               required
-              className="w-full m-4 pl-10 md:pl-4 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 md:pl-4 placeholder:font-semibold  text-white bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             />
           </div>
           <div className="relative w-10/12 md:w-3/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <input
               type="text"
               placeholder="Q-Id"
               required
-              className="w-full m-4 pl-10 md:pl-4 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 md:pl-4 placeholder:font-semibold text-white bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             />
           </div>
         </div>
@@ -62,10 +62,10 @@ function App() {
         {/* 2nd row */}
         <div className="w-full flex flex-col md:flex-row justify-evenly items-center">
           <div className="relative w-10/12 md:w-3/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <select
               required
-              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             >
               <option value="">Course</option>
               <option value="Course 1">Btech</option>
@@ -75,10 +75,10 @@ function App() {
             </select>
           </div>
           <div className="relative w-10/12 md:w-3/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <select
               required
-              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             >
               <option value="">Branch</option>
               <option value="Branch 1">CSE</option>
@@ -95,10 +95,10 @@ function App() {
         {/* 3rd row */}
         <div className="w-full flex flex-col md:flex-row justify-evenly items-center">
           <div className="relative w-10/12 md:w-3/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <select
               required
-              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             >
               <option value="">Session</option>
               <option value="Session 1">2022-23</option>
@@ -108,10 +108,10 @@ function App() {
             </select>
           </div>
           <div className="relative w-10/12 md:w-3/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <select
               required
-              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             >
               <option value="">Gender</option>
               <option value="Gender 1">MALE</option>
@@ -124,21 +124,21 @@ function App() {
         {/* 4th row */}
         <div className="w-full flex flex-col md:flex-row justify-evenly items-center">
           <div className="relative w-10/12 md:w-3/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <input
               type="tel"
               placeholder="Phone Number"
               required
-              className="w-full m-4 pl-10 md:pl-4 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 md:pl-4 placeholder:font-semibold text-white bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             />
           </div>
           <div className="relative w-10/12 md:w-3/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <input
               type="date"
               placeholder="Date of Birth"
               required
-              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             />
           </div>
         </div>
@@ -146,30 +146,30 @@ function App() {
         {/* Additional Inputs */}
         <div className="w-full flex flex-col items-center">
           <div className="relative w-10/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <input
               type="text"
               placeholder="Search and Select Interest"
               required
-              className="w-full m-4 pl-10 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 placeholder:font-semibold text-white bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             />
           </div>
           <div className="relative w-10/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <input
               type="text"
               placeholder="Search and Select Your Skill"
               required
-              className="w-full m-4 pl-10 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 placeholder:font-semibold text-white bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             />
           </div>
           <div className="relative w-10/12">
-            <IoIosArrowForward className="absolute left-2 top-3 text-[#5CE1E6] h-8 w-8" />
+            <IoIosArrowForward className="absolute left-2 top-6 text-[#5CE1E6] h-6 w-6" />
             <input
               type="text"
               placeholder="Additional Input"
               required
-              className="w-full m-4 pl-10 placeholder:font-bold text-white bg-transparent border-[#7CAC5B] border-b-4 border-0"
+              className="w-full m-4 pl-10 placeholder:font-semibold text-white bg-transparent border-[white] border-b border-0 outline-none focus:ring-2 focus:ring-transparent"
             />
           </div>
         </div>
