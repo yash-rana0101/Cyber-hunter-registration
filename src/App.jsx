@@ -8,10 +8,11 @@ import Navbar from "./components/Navbar";
 
 function App() {
   const [termsAccepted, setTermsAccepted] = useState(false);
+  const [clubAccepted, setClubAccepted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (termsAccepted) {
+    if (termsAccepted, clubAccepted) {
       // Handle form submission and payment logic here
       alert("Form submitted and payment processed!");
     } else {
@@ -121,7 +122,7 @@ function App() {
                   required
                   className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[#7CAC5B] border-b-4 border-0"
                 >
-                  <option value="">Course</option>
+                  <option value="">Program</option>
                   <option value="Course 1">Btech</option>
                   <option value="Course 2">BCA</option>
                   <option value="Course 3">MCA</option>
@@ -155,10 +156,16 @@ function App() {
                   className="w-full m-4 pl-10 md:pl-4 font-bold text-gray-500 bg-transparent border-[#7CAC5B] border-b-4 border-0"
                 >
                   <option value="">Session</option>
-                  <option value="Session 1">2022-23</option>
-                  <option value="Session 2">2023-24</option>
-                  <option value="Session 3">2024-25</option>
-                  <option value="Session 4">Other</option>
+                  <option value="Session 1">2022-25</option>
+                  <option value="Session 2">2022-26</option>
+                  <option value="Session 2">2023-26</option>
+                  <option value="Session 3">2023-27</option>
+                  <option value="Session 3">2024-28</option>
+                  <option value="Session 3">2024-27</option>
+                  <option value="Session 3">2025-29</option>
+                  <option value="Session 3">2025-28</option>
+                  <option value="Session 3">2026-29</option>
+                  <option value="Session 3">2026-30</option>
                 </select>
               </div>
               <div className="relative w-10/12 md:w-3/12">
@@ -224,12 +231,12 @@ function App() {
             <div className="w-full m-2 flex items-center justify-center">
               <input
                 type="checkbox"
-                id="terms"
-                checked={termsAccepted}
-                onChange={() => setTermsAccepted(!termsAccepted)}
+                id="club"
+                checked={clubAccepted}
+                onChange={() => setClubAccepted(!clubAccepted)}
                 className="mr-2 p-3"
               />
-              <label htmlFor="terms" className="w-3/4 md:w-2/4 text-white">
+              <label htmlFor="club" className="w-3/4 md:w-2/4 text-white">
                 <div className="border-2 lg:text-base text-xs rounded-3xl backdrop-blur-lg p-4">
                   <h3 className="font-bold ">Registration for club :</h3>
                   <ul className="list-disc pl-4">
@@ -245,12 +252,12 @@ function App() {
             <div className="w-full m-2 flex items-center justify-center">
               <input
                 type="checkbox"
-                id="terms"
-                checked={termsAccepted}
-                onChange={() => setTermsAccepted(!termsAccepted)}
+                id="club"
+                checked={clubAccepted}
+                onChange={() => setClubAccepted(!clubAccepted)}
                 className="mr-2 p-3"
               />
-              <label htmlFor="terms" className="w-3/4 md:w-2/4 text-white">
+              <label htmlFor="club" className="w-3/4 md:w-2/4 text-white">
                 <div className="border-2 lg:text-base text-xs rounded-3xl backdrop-blur-lg p-4">
                   <h3 className="font-bold ">For Club ID Card :</h3>
                   <ul className="list-disc pl-4">
