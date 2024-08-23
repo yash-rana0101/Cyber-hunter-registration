@@ -37,7 +37,7 @@ function ImageUploader() {
           UPLOAD PHOTO
         </h2>
         <button
-          className="bg-[#5CE1E6] hover:bg-transparent hover:border-white hover:text-white hover:border-2 font-medium rounded-3xl flex justify-evenly items-center px-4 py-2 mt-2"
+          className="bg-[#5CE1E6] hover:bg-transparent hover:border-[#5CE1E6] hover:text-[#5CE1E6] hover:border-2 font-medium rounded-3xl flex justify-evenly items-center px-4 py-2 mt-2"
           onClick={handleButtonClick}
         >
           <IoCloudUpload className="h-6 w-6 m-1" />
@@ -45,6 +45,7 @@ function ImageUploader() {
         </button>
         <input
           type="file"
+          required
           ref={fileInputRef}
           style={{ display: 'none' }}
           onChange={handleImageUpload}
