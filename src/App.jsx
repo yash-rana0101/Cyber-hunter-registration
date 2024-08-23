@@ -218,6 +218,9 @@ function App() {
                 />
               </div>
             </div>
+            <div className="w-1/2 m-4 items-center">
+              <h2 className="text-[#5CE1E6] font-semibold text-3xl">Payment</h2>
+            </div>
             <div className="w-full m-2 flex items-center justify-center">
               <input
                 type="checkbox"
@@ -235,7 +238,7 @@ function App() {
                   </ul>
                 </div>
                 <div className="">
-                  <h3 className="absolute md:left-[70%] left-[65%] md:top-[72%] top-[78%] z-10"><span className="text-[#7CAC5B]">Price :</span> 50</h3>
+                  <h3 className="absolute md:left-[70%] left-[65%] md:top-[74%] top-[79%] z-10"><span className="text-[#7CAC5B]">Price :</span> 50</h3>
                 </div>
               </label>
             </div>
@@ -255,7 +258,7 @@ function App() {
                   </ul>
                 </div>
                 <div className="">
-                  <h3 className="absolute md:left-[70%] left-[65%] md:top-[83%] top-[86%] z-10"><span className="text-[#7CAC5B]">Price :</span> 20</h3>
+                  <h3 className="absolute md:left-[70%] left-[65%] md:top-[84%] top-[87%] z-10"><span className="text-[#7CAC5B]">Price :</span> 20</h3>
                 </div>
               </label>
             </div>
