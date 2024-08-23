@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-// import Profile from "./assets/profile.png";
+import Profile from "./assets/profile.png";
 import Upload from "./assets/upload-icon.png";
 import { IoIosArrowForward } from "react-icons/io";
 import BackgroundVideo from "./assets/videoback.mp4";
@@ -46,14 +46,20 @@ function App() {
             onSubmit={handleSubmit}
             className="flex flex-col items-center w-full"
           >
-            <div className="flex flex-col md:flex-row justify-evenly items-center w-full">
-              {/* <img src={Profile} alt="" className="h-24 w-24 md:h-32 md:w-32" /> */}
+            <div className="flex flex-col md:flex-row justify-evenly items-center w-96">
+              <img src={Profile} alt="" className="h-24 w-24 md:h-32 md:w-32" />
               <div className="flex flex-col justify-center mt-4 md:mt-0 md:m-8 items-center md:items-start">
                 <h2 className="text-lg text-white text-center md:text-left">
                   UPLOAD PHOTO
                 </h2>
-                <button className="bg-[#5CE1E6] font-medium rounded-3xl flex justify-evenly items-center px-4 py-2 mt-2">
-                  <img src={Upload} alt="" className="h-6" />
+                <button className="bg-[#49a2a5] hover:bg-transparent hover:border-white hover:text-white hover:border-2 font-medium rounded-3xl flex justify-evenly items-center px-4 py-2 mt-2"
+                  onClick={
+                    <input
+                      type="image"
+
+                    />
+                  }>
+                  <img src={Upload} alt="" className="h-6 m-1" />
                   Click Here
                 </button>
               </div>
@@ -269,7 +275,7 @@ function App() {
                 </div>
               </label>
             </div>
-            
+
 
             {/* Terms and Conditions */}
             <div className="w-full flex flex-col md:flex-row justify-center items-center mt-4">
